@@ -18,6 +18,7 @@ namespace PrjAPI_Pessoa
         }
         protected override void OnAppearing()
         {
+
             base.OnAppearing();
         }
     }
