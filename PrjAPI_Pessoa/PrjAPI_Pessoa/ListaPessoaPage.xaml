@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PrjAPI_Pessoa.ListaPessoaPage">
     <ContentPage.Content>
-        <ListView x:Name="listaDados" ItemTapped="listaDados_ItemTapped">
+        <ListView x:Name="listaPessoas" ItemTapped="listaPessoas_ItemTapped">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>

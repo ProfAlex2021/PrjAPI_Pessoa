@@ -17,9 +17,15 @@ namespace PrjAPI_Pessoa
             InitializeComponent();
         }
 
-        private void listaDados_ItemTapped(object sender, ItemTappedEventArgs e)
+        private void listaPessoas_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             Navigation.PushAsync(new PessoaPage() { BindingContext = e.Item as Pessoa });
+        }
+        protected override async void OnAppearing()
+        {
+            var lista = await API.MetodoGET();
+            listaPessoas.ItemsSource = lista;
+            base.OnAppearing();
         }
     }
 }

@@ -10,7 +10,7 @@ namespace PrjAPI_Pessoa
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new MainPage());
+            MainPage = new NavigationPage(new ListaPessoaPage());
         }
 
         protected override void OnStart()
